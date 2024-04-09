@@ -6,27 +6,11 @@ a {
     text-decoration: none;
 }
 
-body {
-  
-background: linear-gradient(180deg, #070707 16.5%, #1E1E1E 52%,#070707 92%);
-
-
-
-    
-    
+body {  
+background: linear-gradient(180deg, #070707 16.5%, #1E1E1E 52%,#070707 92%);  
 }
 
-.navbar {
-    padding: 30px;
-}
 
-.navbar-nav li {  
-    margin-right: 60px; 
-}
-
-.logo {
-    margin-left: 10px;
-}
 
 .navbar-nav .nav-item .nav-link:hover {
     color: #D12B2B !important;
@@ -36,30 +20,7 @@ background: linear-gradient(180deg, #070707 16.5%, #1E1E1E 52%,#070707 92%);
     color: #D12B2B !important; 
 }
 
-.navbar-toggler {
-    border: none !important;
-}
-
-.navbar-toggler img {
-    width: 35px;
-}
-
-.welcome-header {
-    background-image: url(/images/14\ 1.png);
-}
-
-.btn2 a {
-    padding: 3px 10px 7px 10px;
-    border-radius: 15px;
-}
-
-.btn1 a {
-    padding: 3px 6px 7px 6px;
-    border-radius: 15px;
-}
-
-
- .box-size {
+.box-size {
        position: relative;
 } 
 
@@ -69,7 +30,14 @@ background: linear-gradient(180deg, #070707 16.5%, #1E1E1E 52%,#070707 92%);
         left: 50%;
         transform: translate(-50%, -50%);
         color: white;
+}
 
+.main-header {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
 }
 
 .img-header {
@@ -79,4 +47,8 @@ background: linear-gradient(180deg, #070707 16.5%, #1E1E1E 52%,#070707 92%);
 
 iframe {
     width: 100%;
+}
+
+footer a:hover{
+    color: #D12B2B !important;
 }
