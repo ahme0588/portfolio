@@ -19,6 +19,9 @@ https://michalsnik.github.io/aos/
 ## Images and content
 All the content and images are owned and created by me.
 
+## Css Variables
+I did want to change the colors to the figma file but I ended up liking the default colors provided by boostrap. 
+
 ## Basic Site map and information
 Home, about and contact page are working pages. The initial design was to have minimum content on the front page and have a seperate portfolio page. But due to some suggestions from the UI/UX professor, they asked me to combine the home page and portfolio section into one. All the portfolio content is now on the Home page and the portfolio page currently does not go anywhere. 
 
