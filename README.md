@@ -14,7 +14,9 @@ https://michalsnik.github.io/aos/
 3. The About page has a services section that has the text zoom and fade in animation.
 
 ## Plugins and Fonts
-- NONE
+Adobe fonts - Elevon
+https://use.typekit.net/tiw7ofy.css
+https://fonts.adobe.com/fonts/elevon
 
 ## Images and content
 All the content and images are owned and created by me.
