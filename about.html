@@ -7,12 +7,17 @@
     <title>About</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg bg-dark">
+    <a class="visually-hidden-focusable" href="#intro" aria-label="skip to content">Skip to intro</a>
+    <a class="visually-hidden-focusable" href="#services" aria-label="skip to content">Skip to services</a>
+        <a class="visually-hidden-focusable" href="#contact" aria-label="skip to content">Skip to Contact</a>
+    
+    <header role="banner">
+        <nav class="navbar navbar-expand-lg bg-dark" role="navigation">
             <div class="container">
                 <a class="navbar-brand navbar-brand-lg me-auto text-light ms-md-1 " href="index.html">Variancity</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -39,16 +44,20 @@
             </div>
         </nav>
 
-        <div class="box-size">
+        <div class="box-size" data-aos="fade-up" id="intro">
             <picture>
+                <source class="img-fluid" srcset="images-mobile-tablet/header2-1440_x_665.png"
+                                media="(min-width: 768px)">
+                            <source class="img-fluid" srcset="images-mobile-tablet/header2-720_x_332.png"
+                                media="(max-width: 768px)">
                 <img class="img-header" src="images-desktop/header2.png"
                     alt="picture of a black porsche in a dealership">
             </picture>
-            <h1 class="about-us display-1 text-center text-light fw-semibold">About us</h1>
+            <h1 class="about-us display-1 text-center text-light fw-semibold" role="heading">About us</h1>
         </div>
     </header>
 
-    <main>
+    <main role="main">
         <div class="text-center">
 
             <div class="pe-5 ps-5 pt-4 pb-4">
@@ -61,17 +70,21 @@
         <div class="container-lg">
             <div class="bg-black rounded-5 p-2 py-5 p-md-5">
 
-                <h2 class="h2 ps-5 pb-3 text-light">Our Services</h2>
-
+                <h2 class="h2 ps-5 pb-3 text-light" id="services">Our Services</h2>
+                
                 <div class="row p-2">
+                    
                     <div class="col-lg-6 mb-3 mb-sm-3 mb-lg-0">
                         <div class="card rounded-5 bg-dark h-100">
                             <div class="card-body">
-                                <h5 class="card-title text-light m-2 p-2">Photography</h5>
-                                <p class="card-text text-light m-2 p-2">Transforming moments into memories, our lens
-                                    captures the essence of your story. Let us craft visual narratives that speak
-                                    volumes and evoke emotions.Through every frame, we weave a tapestry of emotions,
-                                    immortalizing your journey in timeless imagery.</p>
+                                <div data-aos="zoom-in">
+
+                                    <h5 class="card-title text-light m-2 p-2">Photography</h5>
+                                    <p class="card-text text-light m-2 p-2">Transforming moments into memories, our lens
+                                        captures the essence of your story. Let us craft visual narratives that speak
+                                        volumes and evoke emotions.Through every frame, we weave a tapestry of emotions,
+                                        immortalizing your journey in timeless imagery.</p>
+                                    </div>
 
                             </div>
                         </div>
@@ -79,12 +92,15 @@
                     <div class="col-lg-6">
                         <div class="card rounded-5 bg-dark h-100">
                             <div class="card-body">
+                                <div data-aos="zoom-in">
                                 <h5 class="card-title text-light m-2 p-2">Videography</h5>
                                 <p class="card-text text-light m-2 p-2">Lights, camera, action! Let us bring your
                                     stories to life on the screen. Whether it's a corporate promo, wedding highlight, or
                                     cinematic short film, our videography services promise to engage, inspire, and
                                     captivate your audience.</p>
 
+                                    </div>
+                                    
                             </div>
                         </div>
                     </div>
@@ -94,23 +110,29 @@
                     <div class="col-lg-6 mb-3 mb-sm-3 mb-lg-0">
                         <div class="card rounded-5 bg-dark h-100">
                             <div class="card-body m-2 p-2">
+                                <div data-aos="zoom-in">
                                 <h5 class="card-title text-light m-2 p-2">Lightroom Presets</h5>
                                 <p class="card-text text-light m-2 p-2">Streamline your editing process with our
                                     Lightroom presets. Designed by professionals, for professionals, our presets will
                                     elevate your photos with just a few clicks. Say goodbye to tedious editing and hello
                                     to stunning results every time.</p>
 
+                                    </div>
+                                    
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-6">
                         <div class="card rounded-5 bg-dark h-100">
                             <div class="card-body">
-                                <h5 class="card-title text-light m-2 p-2">Graphic Design</h5>
-                                <p class="card-text text-light m-2 p-2">Make a statement with our graphic design
-                                    services. From logos to marketing materials, we specialize in creating designs that
-                                    leave a lasting impression. Let us help you stand out from the crowd and bring your
-                                    brand to life.</p>
+                                <div data-aos="zoom-in">
+
+                                    <h5 class="card-title text-light m-2 p-2">Graphic Design</h5>
+                                    <p class="card-text text-light m-2 p-2">Make a statement with our graphic design
+                                        services. From logos to marketing materials, we specialize in creating designs that
+                                        leave a lasting impression. Let us help you stand out from the crowd and bring your
+                                        brand to life.</p>
+                                    </div>
 
                             </div>
                         </div>
@@ -120,7 +142,7 @@
         </div>
         </div>
 
-        <div class="container p-5">
+        <div class="container p-5" id="contact">
 
             <div class="row ps-lg-5 pe-lg-5">
                 <div class="col-lg-6 mb-3 mb-sm-3 mb-lg-0 ps-lg-5 ">
@@ -132,7 +154,7 @@
                                 next project.</p>
                             <div class="text-center pt-3">
 
-                                <button class="btn btn-danger rounded-4 btn-lg ps-5 pe-5 ">Portfolio</button>
+                                <button class="btn btn-danger rounded-4 btn-lg ps-5 pe-5 " aria-label="View Portfolio">Portfolio</button>
                             </div>
                         </div>
                     </div>
@@ -145,7 +167,7 @@
                                 from you. Let's collaborate and create something amazing together.</p>
                         </div>
                         <div class="mt-auto text-center pb-3">
-                            <a href="contact.html" class="btn btn-danger rounded-4 btn-lg ps-5 pe-5">Contact Us</a>
+                            <a href="contact.html" class="btn btn-danger rounded-4 btn-lg ps-5 pe-5" aria-label="Go to Contact Page">Contact Us</a>
                         </div>
                     </div>
                 </div>
@@ -157,8 +179,12 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
 </script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+  </script>
 </body>
-<footer class="bg-dark">
+<footer class="bg-dark" role="contentinfo">
     <div class="container row align-items-center p-4 mx-auto">
 
         <div class="col-4 text-center">
@@ -196,24 +222,24 @@
             <div class="row">
                 <div class="col-6 text-end">
                     <a
-                        href="https://www.instagram.com/variancity/?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw%3D%3D"><img
+                        href="https://www.instagram.com/variancity/?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw%3D%3D" aria-label="Link to instagram"></a>><img
                             class="img-fluid" src="images-icons/instagram.png" alt="Icon of instagram"></a>
                 </div>
 
                 <div class="col-6 text-start">
-                    <a href="https://www.facebook.com/"><img class="img-fluid" src="images-icons/facebook.png"
+                    <a href="https://www.facebook.com/" aria-label="Link to facebook"></a>><img class="img-fluid" src="images-icons/facebook.png"
                             alt="Icon of facebook"></a>
                 </div>
             </div>
 
             <div class="row">
                 <div class="col-6 text-end">
-                    <a href="https://www.linkedin.com/in/faraz-ahmed-38b2452b2/"><img class="img-fluid"
+                    <a href="https://www.linkedin.com/in/faraz-ahmed-38b2452b2/" aria-label="Link to Linkedin"></a>><img class="img-fluid"
                             src="images-icons/linkedin.png" alt="Icon of linkedin"></a>
                 </div>
 
                 <div class="col-6 text-start">
-                    <a href="https://twitter.com/"><img class="img-fluid" src="images-icons/twitter.png"
+                    <a href="https://twitter.com/" aria-label="Link to twitter"></a>><img class="img-fluid" src="images-icons/twitter.png"
                             alt="Icon of twitter"></a>
                 </div>
             </div>
